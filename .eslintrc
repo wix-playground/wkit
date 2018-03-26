@@ -1,5 +1,9 @@
 {
-  "extends": "eslint:recommended",
+  "extends": ["eslint:recommended", "prettier"],
+  "parser": "babel-eslint",
+  "plugins": [
+    "prettier"
+  ],
   "env": {
     "browser": true,
     "commonjs": true,
@@ -10,6 +14,15 @@
     "ecmaVersion": 6
   },
   "rules": {
-    "no-console": "off"
+    "no-console": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "bracketSpacing": true,
+        "printWidth": 100,
+        "singleQuote": true,
+        "trailingComma": "all"
+      }
+    ]
   }
 }
