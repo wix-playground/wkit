@@ -1,3 +1,5 @@
-const loudRejection = require('loud-rejection');
+process.on('unhandledRejection', err => {
+  throw err;
+});
 
 console.log('building!!');
