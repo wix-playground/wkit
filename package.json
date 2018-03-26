@@ -1,0 +1,11 @@
+{
+  "name": "wkit",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ran Yitzhaki",
+  "devDependencies": {
+    "eslint": "~4.19.1",
+    "lerna": "^3.0.0-beta.9"
+  }
+}
