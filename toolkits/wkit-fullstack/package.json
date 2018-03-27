@@ -2,6 +2,9 @@
   "name": "wkit-fullstack",
   "version": "0.0.1",
   "description": "",
+  "bin": {
+    "wkit-fullstack": "bin/wkit-fullstack.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
