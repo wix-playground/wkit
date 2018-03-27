@@ -11,11 +11,11 @@ const fix = true;
 const eslintrcPath = path.relative(process.cwd(), '.eslintrc');
 const eslintrcExists = fs.existsSync(eslintrcPath);
 
-const configFile = eslintrcExists ? eslintrcPath : require.resolve('eslint-config-wkit-fullstack');
+const configFile = eslintrcExists ? eslintrcPath : require.resolve('../config/eslint.config');
 
 const cli = new CLIEngine({ configFile, fix });
 
-const report = cli.executeOnFiles(['**/*.{js,jsx}']);
+const report = cli.executeOnFiles(['src/**/*.{js,jsx}']);
 
 if (fix) {
   CLIEngine.outputFixes(report);
