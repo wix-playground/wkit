@@ -1,8 +1,10 @@
-const jest = require('jest');
-
 process.on('unhandledRejection', err => {
   throw err;
 });
+
+const jest = require('jest');
+const path = require('path');
+const createJestConfig = require('../config/jest/create-jest-config');
 
 process.env.NODE_ENV = 'test';
 
@@ -17,5 +19,10 @@ if (
 ) {
   argv.push('--watch');
 }
+
+argv.push(
+  '--config',
+  JSON.stringify(createJestConfig(relativePath => path.resolve(__dirname, '..', relativePath))),
+);
 
 jest.run(argv);
