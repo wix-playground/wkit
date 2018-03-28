@@ -1,6 +1,7 @@
 {
   "packages": [
-    "toolkits/*"
+    "toolkits/*",
+    "configs/*"
   ],
   "ignoreChanges": [
     "**/__fixtures__/**",
