@@ -1,0 +1,48 @@
+{
+  "name": "generated",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "private": true,
+  "author": {
+    "name": "John Doe",
+    "email": "johndoe@wix.com"
+  },
+  "scripts": {
+    "start": "wkit-fullstack start",
+    "precommit": "wkit-fullstack lint",
+    "pretest": "wkit-fullstack build",
+    "test": "wkit-fullstack test",
+    "posttest": "wkit-fullstack lint",
+    "release": "wkit-fullstack release"
+  },
+  "dependencies": {
+    "axios": "~0.16.0",
+    "ejs": "~2.5.0",
+    "express": "~4.15.0",
+    "i18next": "~8.4.0",
+    "i18next-xhr-backend": "~1.4.0",
+    "prop-types": "~15.6.0",
+    "react": "15.6.1",
+    "react-dom": "15.6.1",
+    "react-i18next": "~4.6.0",
+    "wix-axios-config": "latest",
+    "wix-bootstrap-ng": "latest",
+    "wix-express-csrf": "latest",
+    "wix-express-require-https": "latest",
+    "wix-run-mode": "latest",
+    "regenerator-runtime": "^0.11.0"
+  },
+  "devDependencies": {
+    "react-test-renderer": "~15.6.0",
+    "enzyme": "~2.9.0",
+    "husky": "~0.14.0",
+    "wix-bootstrap-testkit": "latest",
+    "wix-config-emitter": "latest"
+  },
+  "yoshi": {
+    "externals": {
+      "react": "React",
+      "react-dom": "ReactDOM"
+    }
+  }
+}

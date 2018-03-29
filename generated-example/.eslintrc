@@ -1,0 +1,3 @@
+{
+  "extends": "../toolkits/wkit-fullstack/config/eslint.config.js"
+}
