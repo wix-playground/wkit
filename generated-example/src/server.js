@@ -1,9 +1,9 @@
 import 'regenerator-runtime/runtime';
 import { readFileSync } from 'fs';
-import wixRunMode from 'wix-run-mode';
+import wixRunMode from '@wix/wix-run-mode';
 import ejs from 'ejs';
-import wixExpressCsrf from 'wix-express-csrf';
-import wixExpressRequireHttps from 'wix-express-require-https';
+import wixExpressCsrf from '@wix/wix-express-csrf';
+import wixExpressRequireHttps from '@wix/wix-express-require-https';
 
 module.exports = (app, context) => {
   const config = context.config.load('test-gen');
